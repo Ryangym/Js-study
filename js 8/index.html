@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            height: 200px;
+            background-color: deeppink;
+            border: 2px dashed black;
+            padding: 20px;
+        }
+    </style>
+    <script>
+        function mudaTexto(){
+            document.getElementById('r').textContent="Cheguei";
+        }
+        function voltaTexto(){
+            document.getElementById('r').textContent="fui";
+        }
+    </script>
+</head>
+<body>
+    <h3>Evento clique</h3>
+    <div id="r"
+        onmouseover="mudaTexto()"
+        onmouseout="voltaTexto()">
+        Passe o Mouse!
+
+
+    </div>
+    
+</body>
+</html>

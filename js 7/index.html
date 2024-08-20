@@ -14,16 +14,27 @@
         }
     </style>
     <script>
-    
+        function defineCor(cor){
+            let d = document.getElementById('r');
+            d.style.backgroundColor = cor;
+        }
+        function defineCorBody(cor){
+            document.body.style.backgroundColor = cor;
+        }
     </script>
 </head>
 <body>
     <h3>Evento clique</h3>
     <div id="r">javaScript</div>
-    
-
-
-
-    
+    <select onchange="defineCor(this.value)">
+        <option value="deeppink">Rosa</option>
+        <option value="green">Verde</option>
+        <option value="orangered">Rosa</option>
+        <option value="lightblue">Azul</option>
+    </select>
+    <br><br>
+    <label>selecione a cor: </label>
+    <input type="color"
+    onchange="defineCorBody(this.value)">
 </body>
 </html>
