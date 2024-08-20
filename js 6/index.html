@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            height: 200px;
+            background-color: deeppink;
+            border: 2px dashed black;
+            padding: 20px;
+        }
+    </style>
+    <script>
+        function laranja(){
+            let d = document.getElementById('r');
+            d.textContent = "As árvores são laranjas"
+            d.style.backgroundColor = 'orangered';
+        }
+    </script>
+    <script>
+        function verde(){
+            let d = document.getElementById('r');
+            d.textContent = "As árvores são verdes"
+            d.style.backgroundColor = 'green';
+        }
+    </script>
+    <script>
+        function azul(){
+            let d = document.getElementById('r');
+            d.textContent = "o céu é azul"
+            d.style.backgroundColor = 'blue';
+        }
+    </script>
+</head>
+<body>
+    <h3>Evento clique</h3>
+    <div id="r">javaScript</div>
+    <button onclick="verde()">Verde</button>
+    <button onclick="laranja()">Laranja</button>
+    <button onclick="azul()">Azul</button>
+</body>
+</html>
